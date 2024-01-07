@@ -1,0 +1,113 @@
+/* VERSIÓN AGRUPADA: Útil cuando se trata los elementos de forma independiente aunque coincidan estilos,
+es decir, que si se tuviese que modificar un estilo en el futuro, este no debería de repercutir al de otro
+elemento. */
+
+h1 {
+  color: teal;
+}
+
+strong {
+  color: red;
+}
+
+.destacado {
+  color: orange;
+}
+
+#subtitulo {
+  color: blue;
+}
+
+a { 
+  color: red;
+}
+
+em {
+  color: blue;
+}
+
+.especial {
+  color: purple;
+}
+
+caption {
+  color: blue;
+}
+
+th.especial {
+  color: orange;
+}
+
+td strong {
+  color: orange;
+}
+
+th {
+  color: red;
+}
+
+td,
+td em {
+  color: green;
+}
+
+td strong {
+  color: orange;
+}
+
+#adicional p {
+  color: olive;
+}
+
+#especial {
+  color: fuchsia;
+}
+
+p a {
+  color: green;
+}
+
+/* VERSIÓN AGRUPADA: Útil cuando se trata los elementos del mismo modo y si se modificase un estilo se
+deben de modificar para todos. */
+/*
+h1 {
+  color: teal;
+}
+
+strong,
+a,
+th {
+  color: red;
+}
+
+.destacado,
+th.especial,
+td strong {
+  color: orange;
+}
+
+#subtitulo,
+em,
+caption {
+  color: blue;
+}
+
+.especial {
+  color: purple;
+}
+
+td,
+td em,
+p a {
+  color: green;
+}
+
+
+#adicional p {
+  color: olive;
+}
+
+#especial {
+  color: fuchsia;
+}
+*/

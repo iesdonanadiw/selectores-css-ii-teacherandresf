@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: red; /* Propiedad que se hereda. */
+      }
+      .heredar {
+        color: inherit; /* El valor "inherit" fuerza que herede el valor del color de su etiqueta contenedora. */
+      }
+
+      p {
+        border: 3px solid red; /* Propiedad que no se hereda. */
+        padding: 20px; /* Propiedad que no se hereda. */
+        margin: 20px; /* Propiedad que no se hereda. */
+      }
+
+      .no-heredar {
+        border: initial; /* El valor "initial" resetea los estilos aplicados al valor inicial. */
+        margin: initial;
+        padding: initial;
+      }
+
+      /* Otros ejemplos: */
+      #padre {
+        margin: 10px;
+        border: 1px solid #000;
+        color: blue;
+      }
+      
+      /* Prueba a comentar la siguiente regla. */
+      #padre p {
+        padding: inherit;
+        border: inherit;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Las etiquetas a no heredan el color de los párrafos. -->
+    <p>
+      Vivamus suscipit tortor eget felis porttitor volutpat.
+      <b><a href="#">Vestibulum ac diam sit amet quam</a></b> vehicula elementum
+      sed sit amet dui.
+    </p>
+    <p>
+      Vivamus suscipit tortor eget felis porttitor volutpat.
+      <b><a href="#" class="heredar">Nulla porttitor accumsan</a></b> tincidunt.
+    </p>
+    <p class="no-heredar">
+      Vivamus suscipit tortor eget felis porttitor volutpat. Nulla porttitor
+      accumsan tincidunt.
+    </p>
+    <a href="#">Felis porttitor volutpat</a>
+    <a href="#">Felis porttitor volutpat</a>
+
+    <!-- Otro ejemplo: -->
+    <div id="padre">
+      <p>Hola soy el párrafo hijo del div con id padre</p>
+    </div>
+  </body>
+</html>
